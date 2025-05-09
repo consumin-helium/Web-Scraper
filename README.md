@@ -113,6 +113,7 @@ The scraper includes robust error handling for:
 - Delete the output CSV file to start fresh
 - Adjust scroll delays in code if needed for slower connections
 - Respects website's structure with appropriate delays
+- Includes the page number in the csv output for easy reference
 
 ## Limitations
 
