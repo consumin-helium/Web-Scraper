@@ -24,16 +24,30 @@ A Python web scraper that extracts event information from Quicket's events page 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Web-Scraper.git
+git clone https://github.com/consumin-helium/Web-Scraper.git
 cd Web-Scraper
 ```
 
-2. Install required packages:
+2. Activate the included virtual environment:
 ```bash
-pip install selenium beautifulsoup4 webdriver-manager
+source venv/bin/activate  # On Linux/Mac
+# or
+.\venv\Scripts\activate  # On Windows
 ```
 
-3. Install browser driver (choose one):
+The virtual environment already includes all required packages:
+- selenium
+- beautifulsoup4
+- webdriver-manager
+
+If you prefer to create a fresh virtual environment instead:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Linux/Mac
+pip install selenium beautifulsoup4 webdriver-manager tqdm
+```
+
+1. Install browser driver (choose one):
    - Firefox (recommended): Will be installed automatically
    - Chrome: Will be installed automatically
 
